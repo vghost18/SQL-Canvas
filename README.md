@@ -1,16 +1,9 @@
-<p align="center">
-  <a href="https://franchise.cloud/app">
-    <img src="https://i.imgur.com/RmMphMl.png" width='270'/>
-  </a>
-</p>
 
-# Franchise
+# SQL Canvas
 *a sql notebook*
 
 
-Franchise is a lightweight but powerful SQL tool with a notebook interface. You can use it online at [franchise.cloud](https://franchise.cloud).
-
-[![Franchise is pretty cool](https://franchise.cloud/images/landing-gif.gif)](https://franchise.cloud)
+SQL Canvas is a lightweight but powerful SQL tool with a notebook interface. 
 
 - There's no **sign up** and **no install**
     - For editing CSVs, JSON, XLSX files, we've integrated [js-xlsx](https://github.com/SheetJS/js-xlsx), and [sql.js](https://github.com/kripken/sql.js/) so you can query data entirely locally in your browser
@@ -34,7 +27,7 @@ Otherwise, here's how to run franchise in development mode:
 
 2. **cd into the project directory**
     ```bash
-    cd franchise
+    cd SQL Canvas
     ```
 
 3. **Install the project dependencies**
@@ -53,7 +46,7 @@ Otherwise, here's how to run franchise in development mode:
 
 5. **Open up a browser and go to** `http://localhost:3000`
 
-6. **Edit some files in `franchise/src`.**
+6. **Edit some files in `SQL Canvas/src`.**
     
     When you save your edits, and the browser will automatically reload.
 
@@ -61,58 +54,4 @@ Otherwise, here's how to run franchise in development mode:
 
 ---
 
-# Running in Docker 🐳
 
-Application will be available here: [http://localhost:3000](http://localhost:3000)
-
-## Using Docker Hub image
-
-```bash
-docker run \
-    --name franchise \
-    -p 3000:80 \
-    -p 14645:14645 \
-    -d binakot/franchise
-```
-
-## Build your own image
-
-0. Build a docker image:
-
-```bash
-docker build -t franchise .
-```
-
-1. Run a container with image:
-
-```bash
-docker run \
-    --name franchise \
-    -p 3000:80 \
-    -p 14645:14645 \
-    -d franchise
-```
-
----
-
-# Build electron app
-
-Linux: 
-
-```bash
-yarn build:electron:linux
-```
-
-macOS: 
-
-```bash
-yarn build:electron:mac
-```
-
-Windows: 
-
-```bash
-yarn build:electron:windows
-```
-
-After build check out `dist` folder.
