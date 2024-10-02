@@ -50,7 +50,7 @@ class Header extends React.PureComponent {
             <div className="header-wrap">
                 <div className="header">
                     <a href="/" target="_blank">
-                        <h1>Franchise</h1>
+                        <h1>SQL Canvas</h1>
                     </a>
                     <SloganToggler />
                     {this.props.empty ? null : <ExportButton />}
